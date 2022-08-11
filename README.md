@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-## Library_OOP
+## iBlog
 
-- An OOP ruby script that simulates a Library, Student and Teacher
+- A Fullstack ROR project
 
 ## Build
 
@@ -12,12 +12,12 @@
 
 - Clone the project
 ```terminal
-git clone git@github.com:nottherealalanturing/Library_OOP.git
+git clone git@github.com:nottherealalanturing/iblog.git
 ```
 
 - cd into the project directory
 ```terminal
-cd Library_OOP
+cd iblog
 ```
 ## Author
 
@@ -27,10 +27,6 @@ cd Library_OOP
 - Github: [nottherealalanturing](https://github.com/nottherealalanturing)
 - LinkedIn: [Assad Isah](https://linkedin.com/in/assadisah)
 
-👤 **Daniel Urimubenshi**
-
-- Github: [benshidanny11](https://github.com/benshidanny11)
-- LinkedIn: [Daniel Urimubenshi](https://www.linkedin.com/in/danielurimubenshi/)
 
 ## 🤝 Contributing
 
