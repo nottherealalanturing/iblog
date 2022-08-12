@@ -6,27 +6,17 @@ RSpec.describe Like, type: :model do
                        posts_counter: 0)
     post = Post.create(title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0,
                        author_id: user.id)
-    Like.new(author_id: user.id, post_id: post.id)
+    Like.create(post_id: post.id, author_id: user.id)
+    Like.new(post_id: post.id, author_id: user.id)
   end
 
   before { subject.save }
 
-  it 'should save the data' do
+  it 'should save the like' do
     expect(subject).to be_valid
   end
 
-  it 'name should be present' do
-    subject.author_id = nil
-    expect(subject).to_not be_valid
-  end
-
-  it 'post_id should be a string' do
-    subject.post_id = '11123'
-    expect(subject).to_not be_valid
-  end
-
-  it 'author_id should be a string' do
-    subject.author_id = '1123'
-    expect(subject).to_not be_valid
+  it 'should update posts like counter' do
+    expect(subject.post.likes_counter).to eq 2
   end
 end
