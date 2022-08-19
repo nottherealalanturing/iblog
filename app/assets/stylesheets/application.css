@@ -1,15 +1,104 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.users-list {
+    * This is a manifest file that'll be compiled into application.css, which will include all the files
+     display: flex;
+    * listed below.
+     justify-content: center;
+    *
+     align-items: center;
+    * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+     flex-direction: column;
+    * vendor/assets/stylesheets directory can be referenced here using a relative path.
+     gap: 20px;
+    *
+   }
+    * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+   
+    * compiled file so the styles you add here take precedence over styles defined in any other CSS
+   .socials {
+    * files in this directory. Styles in this file should be added after the last require_* statement.
+     float: right;
+    * It is generally better to create a new file per style scope.
+     align-self: flex-end;
+    *
+     justify-self: right;
+    *= require_tree .
+   }
+    *= require_self
+   
+    */
+   .user-image {
+     width: 100px;
+     height: 100px;
+     border: 4px solid black;
+     background-image: url("/assets/user.jpg");
+     background-position: center;
+     background-size: cover;
+   }
+   
+   .user-username {
+     font-size: 20px;
+     font-weight: bolder;
+   }
+   
+   .user-posts {
+     margin-top: 20px;
+   }
+   
+   .user-link {
+     text-decoration: none;
+     color: black !important;
+     cursor: pointer;
+   }
+   
+   a {
+     text-decoration: none;
+     color: black !important;
+     cursor: pointer;
+   }
+   
+   .view-all {
+     padding: 10px;
+     border: 2px black solid;
+   }
+   
+   .user-link:hover {
+     text-decoration: none;
+     color: black !important;
+     border: 2px solid green;
+     cursor: pointer;
+   }
+   
+   .user-data {
+     width: 500px;
+     height: 100px;
+     border: 4px solid black;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 60px;
+   }
+   
+   .single-user {
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+   }
+   
+   .single-post {
+     display: flex;
+     flex-direction: column;
+     width: 620px;
+     padding: 10px;
+     gap: 5px;
+     border: 3px solid black;
+   }
+   
+   .bio {
+     width: 620px;
+     display: flex;
+     padding: 10px;
+     flex-direction: column;
+     gap: 10px;
+     border: 3px solid black;
+   }
