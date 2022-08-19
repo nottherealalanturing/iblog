@@ -16,7 +16,7 @@
     </p>
   </div>
 
-  <% @user.three_recent_posts.each do |post| %>
+  <% @user.last_three_posts.each do |post| %>
     <div class="comments border border-dark">
       <h4><%= post.title%></h4>
       <p><%= post.text%></p>
