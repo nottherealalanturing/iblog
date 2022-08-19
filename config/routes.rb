@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'comments/new'
+  get 'comments/create'
   root 'users#index'
   resources :users, only: [:index, :show] do
     resources :posts, only: [:index, :show]
