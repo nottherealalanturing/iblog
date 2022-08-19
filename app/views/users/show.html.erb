@@ -1,1 +1,28 @@
-<h1>Show the user details by ID</h1>
+ <div class="m-4">
+ <div class="d-flex gap-3 border border-dark">
+    <%= @user.photo %>
+    <p>
+    <strong>Name:</strong>
+    <%= @user.name %>
+    </p>
+    <strong>Number of Posts:</strong>
+    <%= @user.posts_counter %>
+    </p>
+  </div>
+  <div class="border border-dark my-2 ">
+    <p class="d-flex flex-column">
+      <strong>Bio:</strong>
+      <%= @user.bio %>
+    </p>
+  </div>
+
+  <% @user.three_recent_posts.each do |post| %>
+    <div class="comments border border-dark">
+      <h4><%= post.title%></h4>
+      <p><%= post.text%></p>
+      <h5>Comment <%= post.comments_counter%>,  <span>Likes <%= post.likes_counter%></span></h5>
+    </div>
+  <%end%>
+  <br />
+  <%= link_to "See all posts", user_posts_path(@user), class:"btn btn-dark" %>
+</div>

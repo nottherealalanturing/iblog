@@ -1,20 +1,16 @@
-<div class="users-list">
-<% @users.each do |user| %>
-  <a href='/users/<%= user.id %>' class='user-link'>
-  <div class="single-user">
-<div class="user-image"></div>
-<div class="user-data">
-<div class="user-username"><%= user.name %></div>
-<div class="user-posts">number of posts: 
-<% if user.postsCounter.to_i > 0 %>
-  <%= user.postsCounter %>
-<% else %>
-  0
-<% end %>
-</div>
-</div>
-</div></a>
-<% end %>
-
-
-<div/>
+<div id="users">
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Photo</th>
+          <th scope="col">Name</th>
+          <th scope="col">Posts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <%= render user %>
+        <% end %>
+      </tbody>
+    </table>
+  </div> 
