@@ -1,9 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-
 ## iBlog
 
-- A Fullstack ROR project
+- A Fullstack ROR project 
 
 ## Build
 
