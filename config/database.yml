@@ -28,7 +28,7 @@ development:
   encoding: unicode
   database: iblog_dev
   host: localhost
-  username: Assad
+  username: assad
   password: password
 
 
@@ -59,7 +59,7 @@ test:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  username: Assad
+  username: assad
   password: password
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -88,5 +88,5 @@ production:
   database: iblog_production
   encoding: unicode
   host: localhost
-  username: Assad
+  username: assad
   password: password
